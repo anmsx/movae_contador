@@ -137,9 +137,9 @@
 			@property [isRTL=false] {boolean} True for right-to-left languages, false for left-to-right. */
 		regionalOptions: { // Available regional settings, indexed by language/country code
 			'': { // Default regional settings - English/US
-				labels: ['Anos', 'Meses', 'Semanas', 'Dias', 'Horas', 'Minutos', 'Segundos'],
-				labels1: ['Ano', 'Mês', 'Semana', 'Dia', 'Hora', 'Minuto', 'Segundo'],
-				compactLabels: ['a', 'm', 's', 'd'],
+				labels: ['Years', 'Months', 'Weeks', 'Days', 'Hours', 'Minutes', 'Seconds'],
+				labels1: ['Year', 'Month', 'Week', 'Day', 'Hour', 'Minute', 'Second'],
+				compactLabels: ['y', 'm', 'w', 'd'],
 				whichLabels: null,
 				digits: ['0', '1', '2', '3', '4', '5', '6', '7', '8', '9'],
 				timeSeparator: ':',
