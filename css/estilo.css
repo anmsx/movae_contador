@@ -1,0 +1,8 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:400,700);
+
+*{ margin: 0px; padding: 0px; border: 0px;}
+
+body{background: url(../img/fundo.jpg) no-repeat #ED692F top center; font-family: 'Open Sans',Arial;}
+
+.contador{position: absolute; bottom: 20px; left: 50%; width: 600px; margin-left: -340px; background: none !important; border: none !important; color: #fff; font-size: 40px; font-weight: 700; text-shadow: 2px 2px 5px #333;}
+.botao{ position: absolute; top: 450px; left: 50%; width: 176px; height: 55px; margin-left: 90px; }
