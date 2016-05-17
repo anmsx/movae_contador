@@ -14,7 +14,7 @@ function evURL(tipo)
 
 var sponsor = getUrlVar('s') || '';
 
-if(Cookies.get('sponsor') === undefined || Cookies.get('sponsor') == '') {
+if(Cookies.get('sponsor') === undefined || Cookies.get('sponsor') == '' || Cookies.get('sponsor') != sponsor) {
   Cookies.set('sponsor', sponsor);
 }
 
