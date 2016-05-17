@@ -3,5 +3,17 @@ function getUrlVar(key){
   return result && unescape(result[1]) || ""; 
 }
 
-var sponsor = getUrlVar('s')
-alert(sponsor)
+function evURL(tipo)
+{
+    var s = Cookies.get('sponsor');
+    if (s === undefined) {
+      s = 'login';
+    }
+   return 'http://escritoriomovae.com/' + s + '?r=' + tipo;
+}
+
+$('.evcadastro').attr('href', evURL('cadastro'));
+$('.evlogin').attr('href', evURL('login'));
+
+var sponsor = getUrlVar('s') || '';
+Cookies.set('sponsor', sponsor);
