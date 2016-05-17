@@ -12,8 +12,8 @@ function evURL(tipo)
    return 'http://escritoriomovae.com/' + s + '?r=' + tipo;
 }
 
-Cookies.set('sponsor', sponsor);
 var sponsor = getUrlVar('s') || '';
+Cookies.set('sponsor', sponsor);
 
 $('.evcadastro').attr('href', evURL('cadastro'));
 $('.evlogin').attr('href', evURL('login'));
