@@ -13,7 +13,10 @@ function evURL(tipo)
 }
 
 var sponsor = getUrlVar('s') || '';
-Cookies.set('sponsor', sponsor);
+
+if(Cookies.get('sponsor') === undefined || Cookies.get('sponsor') == '') {
+  Cookies.set('sponsor', sponsor);
+}
 
 $('.evcadastro').attr('href', evURL('cadastro'));
 $('.evlogin').attr('href', evURL('login'));
